@@ -70,7 +70,7 @@ export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
                                             {post.title}
                                         </a>
                                     </h2>
-                                    <p className="mt-4 text-sm leading-6 text-slate-600">{post.summary}</p>
+                                    <p className="mt-4 text-sm leading-6 text-slate-600">{post.excerpt}</p>
                                 </div>
                             </article>
                         ))}
