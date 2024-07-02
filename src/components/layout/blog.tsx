@@ -29,7 +29,7 @@ export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
         return <div>No posts found</div>
     }
     let featuredPost = posts.shift() as BlogPost;
-    let remainingPosts = posts.slice(1);
+    let remainingPosts = posts;;
     return (
         <div className="bg-white dark:bg-slate-700 py-24 sm:py-32">
             <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-12 px-6 sm:gap-y-16 lg:grid-cols-2 lg:px-8">
@@ -61,16 +61,16 @@ export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
                         {remainingPosts.map((post) => (
                             <article key={post.id} className="py-12">
                                 <div className="group relative max-w-xl">
-                                    <time dateTime={post.date.toISOString()} className="block text-sm leading-6 text-slate-600">
+                                    <time dateTime={post.date.toISOString()} className="block text-sm leading-6 text-slate-600 dark:text-slate-400">
                                         {post.date.toLocaleDateString('en-AU')}
                                     </time>
-                                    <h2 className="mt-2 text-lg font-semibold text-slate-900 group-hover:text-slate-600">
-                                        <a href={`/blog/${post.id}`}>
+                                    <h2 className="mt-2 text-lg font-semibold text-slate-900 dark:text-slate-300 dark:group-hover:text-slate-400 group-hover:text-slate-600">
+                                        <Link href={`/blog/${post.id}`}>
                                             <span className="absolute inset-0" />
                                             {post.title}
-                                        </a>
+                                        </Link>
                                     </h2>
-                                    <p className="mt-4 text-sm leading-6 text-slate-600">{post.excerpt}</p>
+                                    <p className="mt-4 text-sm leading-6 text-slate-600 dark:text-slate-400">{post.excerpt}</p>
                                 </div>
                             </article>
                         ))}
