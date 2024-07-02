@@ -2,7 +2,7 @@ import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
-import { getLatestPost } from "@/util/posts";
+import { getLatestPost } from "@/server/posts";
 
 export default function Hero() {
     return (

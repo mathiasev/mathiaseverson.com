@@ -4,11 +4,12 @@ import matter from 'gray-matter';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
-type BlogPost = {
+export type BlogPost = {
     id: string,
     title: string,
     date: Date,
     content: string,
+    summary: string,
 };
 
 export function getSortedPostsData() {
