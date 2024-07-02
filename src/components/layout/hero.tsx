@@ -3,12 +3,14 @@ import Image from "next/image";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import { getLatestPost } from "@/server/posts";
+import Link from "next/link";
 
-export default function Hero() {
+export default async function Hero() {
+    let latestPost = await getLatestPost();
     return (
-        <div className="relative isolate overflow-hidden bg-white">
+        <div className="relative isolate overflow-hidden bg-white dark:bg-slate-950">
             <svg
-                className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                className="absolute inset-0 -z-10 h-full w-full stroke-gray-50 light:stroke-gray-300 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                 aria-hidden="true"
             >
                 <defs>
@@ -28,24 +30,24 @@ export default function Hero() {
             <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
                     <div className="mt-24 sm:mt-32 lg:mt-16">
-                        <a href="#" className="inline-flex space-x-6">
-                            <span className="rounded-full bg-slate-600/10 px-3 py-1 text-sm font-semibold leading-6 text-slate-600 ring-1 ring-inset ring-slate-600/10">
+                        <Link href={`/blog/${latestPost.id}`} className="inline-flex space-x-6">
+                            <span className="rounded-full bg-slate-600/10 dark:bg-slate-300/10 px-3 py-1 text-sm font-semibold leading-6 text-slate-600 dark:text-slate-400 ring-1 ring-inset ring-slate-600/10 dark:ring-slate-700/10">
                                 Latest update
                             </span>
                             <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
                                 <Tooltip>
                                     <TooltipTrigger asChild>
-                                        <span>{getLatestPost().title}</span>
+                                        <span>{latestPost.title}</span>
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                        <span>{getLatestPost().date.toLocaleDateString("en-AU")}</span>
+                                        <span>{latestPost.date.toLocaleDateString("en-AU")}</span>
                                     </TooltipContent>
                                 </Tooltip>
                                 <ChevronRightIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                             </span>
-                        </a>
+                        </Link>
                     </div>
-                    <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                    <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 dark:text-slate-400 sm:text-6xl">
                         Mathias Everson
                     </h1>
                     <p className="mt-6 text-lg leading-8 text-gray-500 flex flex-row gap-x-2">
@@ -69,7 +71,7 @@ export default function Hero() {
                             <LinkedInLogoIcon className="h-4s w-4s" />
                             Meet Mathias
                         </a>
-                        <a href="mailto:mathias@mathiaseverson.com" className="text-sm font-semibold leading-6 text-gray-900">
+                        <a href="mailto:mathias@mathiaseverson.com" className="text-sm font-semibold leading-6 text-gray-900 dark:text-slate-400">
                             Get in touch <span aria-hidden="true">→</span>
                         </a>
                     </div>

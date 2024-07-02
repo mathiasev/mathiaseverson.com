@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Footer from "@/components/layout/footer";
+import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,12 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <TooltipProvider>
-          {children}
-          <Footer />
-        </TooltipProvider>
+      <body className={cn(inter.className, "min-h-screen bg-background font-sans antialiased")} suppressHydrationWarning>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem >
+          <TooltipProvider>
+            {children}
+            <Footer />
+          </TooltipProvider>
+        </ThemeProvider>
       </body>
-    </html>
+    </html >
   );
 }

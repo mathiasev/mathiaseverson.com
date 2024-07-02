@@ -29,7 +29,7 @@ export default function Projects() {
         <div className="bg-slate-900 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0">
-                    <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Lorem ipsum dolor sit amet</h2>
+                    <h2 className="text-3xl font-bold tracking-tight text-white/90 dark:text-white/70 sm:text-4xl">Lorem ipsum dolor sit amet</h2>
                     <p className="mt-6 text-lg leading-8 text-slate-300">
                         Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
                         accusamus quisquam.

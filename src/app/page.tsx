@@ -4,13 +4,13 @@ import Hero from "@/components/layout/hero";
 import Projects from "@/components/layout/projects";
 import { BlogPost, getSortedPostsData } from "@/server/posts";
 
-export default function Home() {
-  let posts = getSortedPostsData();
+export default async function Home() {
+  let posts = await getSortedPostsData();
   return (
     <main>
       <Hero />
-      <About />
-      <Projects />
+      {/* <Abo> */}
+      {/* <Projects /> */}
       <Blog posts={posts} />
     </main>
   );

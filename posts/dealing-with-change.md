@@ -1,11 +1,9 @@
 ---
 title: 'Dealing with change: How to implement a new system'
 date: '2023-06-26'
-summary: 'Ive always been interested in solving problems and finding out how things work, and so naturally this interest has evolved to how people and technology interact.'
 ---
-
-_Photo by [Possessed Photography](https://unsplash.com/@possessedphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/0La7MwJhSyo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-
+I've always been interested in solving problems and finding out how things work, and so naturally this interest has evolved to how people and technology interact.
+---
 I’ve always been interested in solving problems and finding out how things work, and so naturally this interest has evolved to how people and technology interact. Over the years, I’ve learnt a few things about implementing a new solution, both here at Threesides and for our clients. The lessons learnt are not new. Harvard Business Review [wrote about it back in 1985](https://hbr.org/1985/11/implementing-new-technology), and I listened to [a podcast](https://businessandinvesting.com/ep-121-is-your-business-keeping-you-in-a-prison/) about it this week. What is “it”?
 
 Change management. Specifically, how change management is integral to new system implementation.
