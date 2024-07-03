@@ -33,12 +33,12 @@ export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
     return (
         <div className="bg-white dark:bg-slate-700 py-24 sm:py-32">
             <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-12 px-6 sm:gap-y-16 lg:grid-cols-2 lg:px-8">
-                <article className="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg">
+                <article className="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg group">
                     <time dateTime={featuredPost.date.toISOString()} className="block text-sm leading-6 text-slate-600 dark:text-slate-400">
                         {featuredPost.date.toLocaleDateString('en-AU')}
                     </time>
 
-                    <h2 id="featured-post" className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-slate-300">
+                    <h2 id="featured-post" className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-slate-300 group-hover:dark:text-slate-200">
                         <Link href={`/blog/${featuredPost.id}`}>
                             {featuredPost.title}
                         </Link>
@@ -48,7 +48,7 @@ export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
                         <div className="flex">
                             <Link
                                 href={`/blog/${featuredPost.id}`}
-                                className="text-sm font-semibold leading-6 text-slate-800 dark:text-slate-200"
+                                className="text-sm font-semibold leading-6 text-slate-800 dark:text-slate-300 group-hover:dark:text-slate-200"
                                 aria-describedby="featured-post"
                             >
                                 Continue reading <span aria-hidden="true">&rarr;</span>
@@ -57,7 +57,7 @@ export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
                     </div>
                 </article>
                 <div className="mx-auto w-full max-w-2xl border-t border-slate-900/10 pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
-                    <div className="-my-12 divide-y divide-slate-900/10">
+                    <div className="-my-12 divide-y divide-slate-900/10 dark:divide-slate-200/10">
                         {remainingPosts.map((post) => (
                             <article key={post.id} className="py-12">
                                 <div className="group relative max-w-xl">

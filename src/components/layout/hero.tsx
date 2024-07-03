@@ -10,7 +10,7 @@ export default async function Hero() {
     return (
         <div className="relative isolate overflow-hidden bg-white dark:bg-slate-950">
             <svg
-                className="absolute inset-0 -z-10 h-full w-full stroke-gray-50 light:stroke-gray-300 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                className="absolute inset-0 -z-10 h-full w-full stroke-gray-500 light:stroke-gray-300 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                 aria-hidden="true"
             >
                 <defs>
@@ -30,14 +30,14 @@ export default async function Hero() {
             <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
                     <div className="mt-24 sm:mt-32 lg:mt-16">
-                        <Link href={`/blog/${latestPost.id}`} className="inline-flex space-x-6">
-                            <span className="rounded-full bg-slate-600/10 dark:bg-slate-300/10 px-3 py-1 text-sm font-semibold leading-6 text-slate-600 dark:text-slate-400 ring-1 ring-inset ring-slate-600/10 dark:ring-slate-700/10">
+                        <Link href={`/blog/${latestPost.id}`} className="inline-flex space-x-6 items-center">
+                            <span className="rounded-full bg-slate-600/10 dark:bg-slate-300/10 px-3 py-1 text-sm font-semibold leading-6 text-slate-600 dark:text-slate-400 ring-1 ring-inset ring-slate-600/10 dark:ring-slate-700/10 flex-shrink-0 items-center">
                                 Latest update
                             </span>
-                            <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
+                            <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600 w-full">
                                 <Tooltip>
                                     <TooltipTrigger asChild>
-                                        <span>{latestPost.title}</span>
+                                        <span className=" ">{latestPost.title}</span>
                                     </TooltipTrigger>
                                     <TooltipContent>
                                         <span>{latestPost.date.toLocaleDateString("en-AU")}</span>
@@ -50,15 +50,15 @@ export default async function Hero() {
                     <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 dark:text-slate-400 sm:text-6xl">
                         Mathias Everson
                     </h1>
-                    <p className="mt-6 text-lg leading-8 text-gray-500 flex flex-row gap-x-2">
+                    <p className="mt-6 md:text-lg leading-8 text-sm text-gray-500 flex flex-row gap-x-2">
                         <span>🎓</span>
                         <span>IT grad from <a className="text-gray-600 underline underline-offset-2" target="_blank" href="https://canberra.edu.au/">University of Canberra</a></span>
                     </p>
-                    <p className="mt-2 text-lg leading-8 text-gray-500 flex flex-row gap-x-2">
+                    <p className="mt-2 md:text-lg leading-8 text-sm text-gray-500 flex flex-row gap-x-2">
                         <span>👨‍💻</span>
                         <span>Digital Team Lead at <a className="text-gray-600 underline underline-offset-2" target="_blank" href="https://threesides.com.au/">Threesides Marketing</a></span>
                     </p>
-                    <p className="mt-2 text-lg leading-8 text-gray-500 flex flex-row gap-x-2">
+                    <p className="mt-2 md:text-lg leading-8 text-sm text-gray-500 flex flex-row gap-x-2">
                         <span>🌆</span>
                         <span><a className="text-gray-600 underline underline-offset-2" target="_blank" href="https://canberra.com.au/">Canberra</a> local</span>
                     </p>
@@ -84,7 +84,7 @@ export default async function Hero() {
                                 alt="Mathias Everson"
                                 width={1200}
                                 height={800}
-                                className="w-[700px] h-[600px] object-cover rounded-md shadow-2xl ring-1 ring-gray-900/10"
+                                className="h-96 md:w-[700px] md:h-[600px] object-cover rounded-md shadow-2xl ring-1 ring-gray-900/10"
                             />
                         </div>
                     </div>
