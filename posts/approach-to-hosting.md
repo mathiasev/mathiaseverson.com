@@ -1,5 +1,5 @@
 ---
-name: "The Threesides Approach to Domain, Web and Email Hosting"
+title: "The Threesides Approach to Domain, Web and Email Hosting"
 date: "2021-03-12"
 ---
 This article provides some information about how we approach web, email and domain hosting at Threesides. It also helps to explain some of the terms that get thrown around a lot and answer frequently asked questions.
