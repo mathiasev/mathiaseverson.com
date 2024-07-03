@@ -1,11 +1,8 @@
 import { CopyPostButton } from "@/components/copy-post-button";
-import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipTrigger } from "@/components/ui/tooltip";
 import { getPostById, getSortedPostsData } from "@/server/posts";
 import { HomeIcon } from "@heroicons/react/20/solid";
-import { CopyIcon } from "@radix-ui/react-icons";
 import { TooltipContent } from "@radix-ui/react-tooltip";
-import { getStaticPaths } from "next/dist/build/templates/pages";
 import Link from "next/link";
 
 
@@ -26,7 +23,6 @@ export default async function BlogPost({ params }: { params: { blogId: string } 
                     <li>
                         <div className="flex items-center">
                             <svg
-                                className="h-5 w-5 flex-shrink-0 text-slate-300"
                                 className="h-5 w-5 flex-shrink-0 text-slate-300"
                                 fill="currentColor"
                                 viewBox="0 0 20 20"
@@ -63,7 +59,7 @@ export default async function BlogPost({ params }: { params: { blogId: string } 
             </div>
 
             <div className="prose mx-auto dark:prose-invert" dangerouslySetInnerHTML={{ __html: post.content }} />
-        </article >
+        </article>
     )
 }
 
