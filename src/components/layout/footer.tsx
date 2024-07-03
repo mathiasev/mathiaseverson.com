@@ -1,4 +1,6 @@
 import { PropsWithoutRef } from "react"
+import { ModeToggle } from "../mode-toggle"
+
 
 const navigation = [
     {
@@ -29,7 +31,7 @@ const navigation = [
     },
     {
         name: 'GitHub',
-        href: 'httos://github.com/mathiaseverson',
+        href: 'https://github.com/mathiasev',
         icon: (props: React.ComponentPropsWithoutRef<"svg">) => (
             <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
                 <path
@@ -58,6 +60,12 @@ const navigation = [
 export default function Footer() {
     return (
         <footer className="bg-white dark:bg-slate-950">
+            <div className="mx-auto">
+                <ins className="adsbygoogle"
+                    style={{ display: "inline-block", width: "300px", height: "250px" }}
+                    data-ad-client="ca-pub-7773776433832805"
+                    data-ad-slot="5339871373"></ins>
+            </div>
             <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
                 <div className="flex justify-center space-x-6 md:order-2">
                     {navigation.map((item) => (
@@ -68,8 +76,9 @@ export default function Footer() {
                     ))}
                 </div>
                 <div className="mt-8 md:order-1 md:mt-0">
-                    <p className="text-center text-xs leading-5 text-gray-500">
-                        &copy; {new Date().getFullYear()} Mathias Everson. All rights reserved.
+                    <p className="text-center text-xs leading-5 text-gray-500 flex items-center gap-2">
+                        <span>&copy; {new Date().getFullYear()} Mathias Everson. All rights reserved.</span>
+                        <ModeToggle />
                     </p>
                 </div>
             </div>
