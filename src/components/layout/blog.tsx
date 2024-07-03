@@ -74,6 +74,14 @@ export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
                                 </div>
                             </article>
                         ))}
+                        <div>
+                            <ins className="adsbygoogle"
+                                style={{ display: "block" }}
+                                data-ad-format="fluid"
+                                data-ad-layout-key="-h7-12+5a-2v-7i"
+                                data-ad-client="ca-pub-7773776433832805"
+                                data-ad-slot="7869053329"></ins>
+                        </div>
                     </div>
                 </div>
             </div>

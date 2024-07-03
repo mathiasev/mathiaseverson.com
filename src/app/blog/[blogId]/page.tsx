@@ -19,12 +19,11 @@ export default async function BlogPost({ params }: { params: { blogId: string } 
                 <ol role="list" className="flex items-center space-x-4">
                     <li>
                         <Link href="/" className="text-slate-400 hover:text-slate-500">
-                        <Link href="/" className="text-slate-400 hover:text-slate-500">
                             <HomeIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
                             <span className="sr-only">Home</span>
                         </Link>
                     </li>
-                    <li >
+                    <li>
                         <div className="flex items-center">
                             <svg
                                 className="h-5 w-5 flex-shrink-0 text-slate-300"
@@ -51,13 +50,11 @@ export default async function BlogPost({ params }: { params: { blogId: string } 
             </nav>
 
             <div className="bg-slate-900 p-8 sm:p-24 rounded-lg shadow-sm">
-            <div className="bg-slate-900 p-8 sm:p-24 rounded-lg shadow-sm">
                 <div className="mx-auto max-w-7xl ">
                     <div className="mx-auto  text-balance lg:mx-0">
                         <h2 className="text-3xl font-bold tracking-tight text-slate-200 sm:text-6xl">{post.title}</h2>
                         <h2 className="text-3xl font-bold tracking-tight text-slate-200 sm:text-6xl">{post.title}</h2>
                         <p className="mt-4 text-sm font-semibold text-slate-400">{post.date.toLocaleDateString("en-AU")}</p>
-                        <p className="mt-4 text-sm md:text-lg md:leading-8 text-slate-300 dark:text-slate-400">
                         <p className="mt-4 text-sm md:text-lg md:leading-8 text-slate-300 dark:text-slate-400">
                             {post.excerpt}
                         </p>
@@ -66,7 +63,6 @@ export default async function BlogPost({ params }: { params: { blogId: string } 
             </div>
 
             <div className="prose mx-auto dark:prose-invert" dangerouslySetInnerHTML={{ __html: post.content }} />
-
         </article >
     )
 }
