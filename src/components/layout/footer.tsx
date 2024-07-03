@@ -1,6 +1,6 @@
 import { PropsWithoutRef } from "react"
+import { Ad } from "../ads/ad"
 import { ModeToggle } from "../mode-toggle"
-
 
 const navigation = [
     {
@@ -61,10 +61,9 @@ export default function Footer() {
     return (
         <footer className="bg-white dark:bg-slate-950">
             <div className="mx-auto">
-                <ins className="adsbygoogle"
-                    style={{ display: "inline-block", width: "300px", height: "250px" }}
-                    data-ad-client="ca-pub-7773776433832805"
-                    data-ad-slot="5339871373"></ins>
+                <Ad
+                    format="fixed"
+                    slot="5339871373" />
             </div>
             <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
                 <div className="flex justify-center space-x-6 md:order-2">
