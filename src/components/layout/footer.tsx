@@ -1,7 +1,4 @@
 import { PropsWithoutRef } from "react"
-import { ModeToggle } from "../mode-toggle"
-import { Ad } from "../ads/ad"
-
 
 const navigation = [
     {
@@ -32,6 +29,7 @@ const navigation = [
     },
     {
         name: 'GitHub',
+        href: 'https://github.com/mathiasev',
         href: 'https://github.com/mathiasev',
         icon: (props: React.ComponentPropsWithoutRef<"svg">) => (
             <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
@@ -76,6 +74,9 @@ export default function Footer() {
                     ))}
                 </div>
                 <div className="mt-8 md:order-1 md:mt-0">
+                    <p className="text-center text-xs leading-5 text-gray-500 flex items-center gap-2">
+                        <span>&copy; {new Date().getFullYear()} Mathias Everson. All rights reserved.</span>
+                        <ModeToggle />
                     <p className="text-center text-xs leading-5 text-gray-500 flex items-center gap-2">
                         <span>&copy; {new Date().getFullYear()} Mathias Everson. All rights reserved.</span>
                         <ModeToggle />
