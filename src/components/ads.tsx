@@ -1,6 +1,7 @@
 "use client"
 import { useEffect } from "react";
 
+declare const window: any;
 export function Ads() {
 
     useEffect(() => {
