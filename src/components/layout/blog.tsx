@@ -1,5 +1,6 @@
 import { BlogPost, getSortedPostsData } from "@/server/posts";
 import Link from "next/link";
+import { Ad } from "../ads/ad";
 
 const featuredPost = {
     id: 1,
@@ -75,12 +76,10 @@ export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
                             </article>
                         ))}
                         <div>
-                            <ins className="adsbygoogle"
-                                style={{ display: "block" }}
-                                data-ad-format="fluid"
-                                data-ad-layout-key="-h7-12+5a-2v-7i"
-                                data-ad-client="ca-pub-7773776433832805"
-                                data-ad-slot="7869053329"></ins>
+                            <Ad
+                                format="fluid"
+                                layoutkey="-h7-12+5a-2v-7i"
+                                slot="7869053329" />
                         </div>
                     </div>
                 </div>

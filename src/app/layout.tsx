@@ -6,8 +6,7 @@ import Footer from "@/components/layout/footer";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/react"
-import { useEffect } from "react";
-import { Ads } from "@/components/ads";
+import { AdsScript } from "@/components/ads/ads-script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +31,7 @@ export default function RootLayout({
           </TooltipProvider>
         </ThemeProvider>
         <Analytics />
-        <Ads />
+        <AdsScript />
       </body>
     </html >
   );
