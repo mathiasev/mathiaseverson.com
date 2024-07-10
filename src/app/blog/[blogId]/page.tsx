@@ -1,14 +1,17 @@
 import { CopyPostButton } from "@/components/copy-post-button";
+import PostContent from "@/components/layout/post-content";
 import { Tooltip, TooltipTrigger } from "@/components/ui/tooltip";
 import { getPostById, getSortedPostsData } from "@/server/posts";
 import { HomeIcon } from "@heroicons/react/20/solid";
 import { TooltipContent } from "@radix-ui/react-tooltip";
 import Link from "next/link";
+import { useEffect } from "react";
 
 
 export default async function BlogPost({ params }: { params: { blogId: string } }) {
 
     let post = await getPostById(params.blogId);
+
 
     return (
         <article className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 flex flex-col gap-y-12 lg:px-8 lg:pb-40">
@@ -58,7 +61,7 @@ export default async function BlogPost({ params }: { params: { blogId: string } 
                 </div>
             </div>
 
-            <div className="prose mx-auto dark:prose-invert" dangerouslySetInnerHTML={{ __html: post.content }} />
+            <PostContent content={post.content} />
         </article>
     )
 }

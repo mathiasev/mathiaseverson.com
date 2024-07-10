@@ -73,6 +73,7 @@ export default function Footer() {
                     ))}
                 </div>
                 <div className="mt-8 md:order-1 md:mt-0">
+                    <div className="gcse-search"></div>
                     <p className="text-center text-xs leading-5 text-gray-500 flex items-center gap-2">
                         <span>&copy; {new Date().getFullYear()} Mathias Everson. All rights reserved.</span>
                         <ModeToggle />
