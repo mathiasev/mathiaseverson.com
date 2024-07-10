@@ -3,7 +3,7 @@ import React, { useEffect, useMemo } from "react";
 
 declare const window: any;
 
-export function Ad({ ...props }: { slot: string; format: string; layoutkey?: string; }): React.ReactElement {
+export function Ad({ ...props }: { [key: string]: string }) {
     useEffect(() => {
         try {
             const adsbygoogle = window.adsbygoogle || [];
@@ -15,9 +15,7 @@ export function Ad({ ...props }: { slot: string; format: string; layoutkey?: str
 
     return (
         <ins className="adsbygoogle"
-            style={{ minWidth: "250px" }}
             data-ad-client="ca-pub-7773776433832805"
-            data-adtest="on"
             {...props}
         ></ins>
     ) as React.ReactElement;
