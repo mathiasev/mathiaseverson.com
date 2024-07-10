@@ -9,6 +9,12 @@ export function AdsScript() {
         script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7773776433832805";
         script.async = true;
         document.body.appendChild(script);
+
+        window.addEventListener("load", () => {
+            const adsbygoogle = window.adsbygoogle || [];
+            adsbygoogle.push({});
+        });
+
     }, []);
 
     return '';

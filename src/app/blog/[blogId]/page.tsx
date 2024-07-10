@@ -12,7 +12,7 @@ export default async function BlogPost({ params }: { params: { blogId: string } 
 
     return (
         <article className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 flex flex-col gap-y-12 lg:px-8 lg:pb-40">
-            <nav className="flex mx-auto w-full max-w-4xl justify-center items-center sticky top-0 z-10 p-2 lg:pb-4 lg:-mt-12 lg:pt-8 before:blur-lg before:-z-20 before:-m-5 lg:before:-mt-10 before:bg-[#121212] before:inset-0  before:absolute" aria-label="Breadcrumb">
+            <nav className="flex mx-auto w-full max-w-4xl justify-center items-center sticky top-0 z-10 p-2 lg:pb-4 lg:-mt-12 lg:pt-8 before:drop-shadow-sm before:-z-20 before:-m-5 lg:before:-mt-10 before:bg-white dark:before:bg-[#121212] before:inset-0  before:absolute" aria-label="Breadcrumb">
                 <ol role="list" className="flex items-center space-x-4">
                     <li>
                         <Link href="/" className="text-slate-400 hover:text-slate-500">

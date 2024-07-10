@@ -23,8 +23,8 @@ export default function RootLayout({
 
 
   return (
-    <html lang="en">
-      <body className={cn(inter.className, "min-h-screen bg-background font-sans antialiased")} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
+      <body className={cn(inter.className, "min-h-screen bg-background font-sans antialiased")} >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem >
           <TooltipProvider>
             {children}

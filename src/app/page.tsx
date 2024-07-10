@@ -9,7 +9,7 @@ export default async function Home() {
   return (
     <main>
       <Hero />
-      {/* <Abo> */}
+      {/* <About> */}
       {/* <Projects /> */}
       <Blog posts={posts} />
     </main>
