@@ -16,7 +16,7 @@ export default function PostContent({ content }: { content: string }) {
             let adSpot = document.createElement("span")
             adSpot.id = "ad-spot";
             adSpot.innerHTML = `<ins class="adsbygoogle"
-                                 style="display:block; text-align:center;"
+                                 style="display:block; text-align:center;margin:2rem 0;"
                                 data-ad-layout="in-article"
                                 data-ad-format="fluid"
                                 data-ad-client="ca-pub-7773776433832805"
