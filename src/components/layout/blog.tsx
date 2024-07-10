@@ -1,6 +1,7 @@
 import { BlogPost, getSortedPostsData } from "@/server/posts";
 import Link from "next/link";
 import { Ad } from "../ads/ad";
+import { Ad } from "../ads/ad";
 
 const featuredPost = {
     id: 1,
