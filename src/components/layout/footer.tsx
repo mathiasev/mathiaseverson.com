@@ -1,6 +1,5 @@
 import { PropsWithoutRef } from "react"
 import { Ad } from "../ads/ad"
-import { Ad } from "../ads/ad"
 import { ModeToggle } from "../mode-toggle"
 
 const navigation = [
