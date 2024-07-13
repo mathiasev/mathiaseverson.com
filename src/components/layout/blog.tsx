@@ -1,29 +1,6 @@
 import { BlogPost, getSortedPostsData } from "@/server/posts";
 import Link from "next/link";
-import { Ad } from "../ads/ad";
 
-const featuredPost = {
-    id: 1,
-    title: 'We’re incredibly proud to announce we have secured $75m in Series B',
-    href: '#',
-    description:
-        'Libero neque aenean tincidunt nec consequat tempor. Viverra odio id velit adipiscing id. Nisi vestibulum orci eget bibendum dictum. Velit viverra posuere vulputate volutpat nunc. Nunc netus sit faucibus.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16'
-}
-const posts = [
-    {
-        id: 2,
-        title: 'Boost your conversion rate',
-        href: '#',
-        description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.',
-        date: 'Mar 10, 2020',
-        datetime: '2020-03-16',
-
-    },
-    // More posts...
-]
 
 export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
     if (!posts.length) {
@@ -80,14 +57,8 @@ export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
                                 style={{ display: "block" }}
                                 data-ad-format="fluid"
                                 data-ad-layout-key="-h7-12+5a-2v-7i"
-                                data-adtest="on"
                                 data-ad-client="ca-pub-7773776433832805"
                                 data-ad-slot="7869053329"></ins>
-                            {/* <Ad
-                                format="fluid"
-                                layoutkey="-h7-12+5a-2v-7i"
-                                slot="7869053329" />
-                                 */}
                         </div>
                     </div>
                 </div>
