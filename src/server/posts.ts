@@ -64,5 +64,6 @@ export async function getSortedPostsData() {
     });
 }
 export async function getLatestPost(): Promise<BlogPost> {
-    return await getSortedPostsData().then(posts => posts.pop() as BlogPost);
+    let posts = await getSortedPostsData();
+    return posts.shift() as BlogPost;
 }

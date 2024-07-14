@@ -1,28 +1,6 @@
 import { BlogPost, getSortedPostsData } from "@/server/posts";
 import Link from "next/link";
 
-const featuredPost = {
-    id: 1,
-    title: 'We’re incredibly proud to announce we have secured $75m in Series B',
-    href: '#',
-    description:
-        'Libero neque aenean tincidunt nec consequat tempor. Viverra odio id velit adipiscing id. Nisi vestibulum orci eget bibendum dictum. Velit viverra posuere vulputate volutpat nunc. Nunc netus sit faucibus.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16'
-}
-const posts = [
-    {
-        id: 2,
-        title: 'Boost your conversion rate',
-        href: '#',
-        description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.',
-        date: 'Mar 10, 2020',
-        datetime: '2020-03-16',
-
-    },
-    // More posts...
-]
 
 export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
     if (!posts.length) {
@@ -33,12 +11,12 @@ export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
     return (
         <div className="bg-white dark:bg-slate-700 py-24 sm:py-32">
             <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-12 px-6 sm:gap-y-16 lg:grid-cols-2 lg:px-8">
-                <article className="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg">
+                <article className="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg group">
                     <time dateTime={featuredPost.date.toISOString()} className="block text-sm leading-6 text-slate-600 dark:text-slate-400">
                         {featuredPost.date.toLocaleDateString('en-AU')}
                     </time>
 
-                    <h2 id="featured-post" className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-slate-300">
+                    <h2 id="featured-post" className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-slate-300 group-hover:dark:text-slate-200">
                         <Link href={`/blog/${featuredPost.id}`}>
                             {featuredPost.title}
                         </Link>
@@ -48,7 +26,7 @@ export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
                         <div className="flex">
                             <Link
                                 href={`/blog/${featuredPost.id}`}
-                                className="text-sm font-semibold leading-6 text-slate-800 dark:text-slate-200"
+                                className="text-sm font-semibold leading-6 text-slate-800 dark:text-slate-300 group-hover:dark:text-slate-200"
                                 aria-describedby="featured-post"
                             >
                                 Continue reading <span aria-hidden="true">&rarr;</span>
@@ -57,7 +35,7 @@ export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
                     </div>
                 </article>
                 <div className="mx-auto w-full max-w-2xl border-t border-slate-900/10 pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
-                    <div className="-my-12 divide-y divide-slate-900/10">
+                    <div className="-my-12 divide-y divide-slate-900/10 dark:divide-slate-200/10">
                         {remainingPosts.map((post) => (
                             <article key={post.id} className="py-12">
                                 <div className="group relative max-w-xl">
@@ -74,6 +52,14 @@ export default async function Blog({ posts = [] }: { posts: BlogPost[] }) {
                                 </div>
                             </article>
                         ))}
+                        <div>
+                            <ins className="adsbygoogle"
+                                style={{ display: "block" }}
+                                data-ad-format="fluid"
+                                data-ad-layout-key="-h7-12+5a-2v-7i"
+                                data-ad-client="ca-pub-7773776433832805"
+                                data-ad-slot="7869053329"></ins>
+                        </div>
                     </div>
                 </div>
             </div>

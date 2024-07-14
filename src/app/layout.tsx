@@ -5,6 +5,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Footer from "@/components/layout/footer";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/react"
+import { AdsScript } from "@/components/ads/ads-script";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,15 +21,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
-    <html lang="en">
-      <body className={cn(inter.className, "min-h-screen bg-background font-sans antialiased")} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
+      <body className={cn(inter.className, "min-h-screen bg-background font-sans antialiased")} >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem >
           <TooltipProvider>
             {children}
             <Footer />
           </TooltipProvider>
         </ThemeProvider>
+        <Analytics />
+        <SpeedInsights />
+        <AdsScript />
       </body>
     </html >
   );
