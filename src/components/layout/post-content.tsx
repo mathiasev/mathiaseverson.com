@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+declare const window: any;
 
 export default function PostContent({ content }: { content: string }) {
 
@@ -24,6 +25,10 @@ export default function PostContent({ content }: { content: string }) {
             children[mid].append(adSpot);
         }
 
+        window.addEventListener("load", () => {
+            const adsbygoogle = window.adsbygoogle || [];
+            adsbygoogle.push({});
+        });
     }, []);
 
     return (
