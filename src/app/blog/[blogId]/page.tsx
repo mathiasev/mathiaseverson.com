@@ -8,7 +8,8 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 
-export default async function BlogPost({ params }: { params: { blogId: string } }) {
+export default async function BlogPost(props: { params: Promise<{ blogId: string }> }) {
+    const params = await props.params;
 
     let post = await getPostById(params.blogId);
 
