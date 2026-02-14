@@ -62,8 +62,6 @@ Your website functions as your online storefront, informational brochure, and ce
         *   **My Recommendation:** Both options are robust and reliable. Choose the platform that you find most intuitive and that integrates best with any existing tools you currently use. The critical step is to utilise a professional, domain-based email service.
 *   
 
-------- Edited ^^^^
-
 1.  **Social Media (Meta Platforms)**
     For many businesses, social media platforms are key gathering points for their target audience. Meta (the parent company of Facebook) offers a powerful suite of tools.
     1.  **Meta Business Suite (formerly Meta Business Portfolio)**
