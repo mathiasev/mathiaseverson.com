@@ -25,7 +25,6 @@ The plugin integrates seamlessly with six core Google services:
 3.  **Google AdSense:** To earn money by placing ads on your site.
 4.  **PageSpeed Insights:** To analyse and improve your website's loading speed.
 5.  **Google Tag Manager:** For advanced management of tracking tags and scripts.
-6.  **Google Optimize:** For running A/B tests to improve conversions.
 
 ## Key Features & Benefits of Google Site Kit
 
@@ -59,12 +58,11 @@ Website speed is a critical ranking factor and vital for user experience. The Pa
 
 For publishers looking to monetise their content, the AdSense integration is a game-changer. It simplifies the process of placing ad code on your site and allows you to monitor your earnings directly from the WordPress dashboard.
 
-### Advanced Tracking with Tag Manager and Optimize
+### Advanced Tracking with Tag Manager
 
 For those who need more granular control, **Google Site Kit** supports:
 
 *   **Google Tag Manager:** Deploy various tracking tags (like a Facebook Pixel or other analytics scripts) without modifying your site’s code directly.
-*   **Google Optimize:** Set up and run A/B tests on your pages to see which headlines, images, or calls-to-action perform best.
 
 ### The Consolidated Dashboard
 
@@ -130,6 +128,6 @@ Installing Site Kit is just the first step. To truly unlock its power, you need 
 *   **Understand Your Audience:** Use the Analytics data to learn more about who is visiting your site. Are they mostly on mobile? Which country are they from? This information can help you tailor your content and design to better serve your audience.
 
 ## Conclusion
-\n**Google Site Kit** is more than just a plugin; it's an indispensable tool for anyone serious about growing their WordPress website. By simplifying access to critical performance data and presenting it in an actionable format, it empowers you to make smarter decisions about your SEO, content strategy, and user experience.
+**Google Site Kit** is more than just a plugin; it's an indispensable tool for anyone serious about growing their WordPress website. By simplifying access to critical performance data and presenting it in an actionable format, it empowers you to make smarter decisions about your SEO, content strategy, and user experience.
 
 If you haven't installed the **site kit plugin** yet, there’s no better time than now. Harness the insights it offers, and start your journey towards continuous, data-driven improvement for your website.
