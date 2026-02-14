@@ -54,12 +54,9 @@ export default async function BlogPost(props: {
       <div className="bg-slate-900 p-8 sm:p-24 rounded-lg shadow-sm">
         <div className="mx-auto max-w-7xl ">
           <div className="mx-auto  text-balance lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-200 sm:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight text-slate-200 sm:text-6xl">
               {post.title}
-            </h2>
-            <h2 className="text-3xl font-bold tracking-tight text-slate-200 sm:text-6xl">
-              {post.title}
-            </h2>
+            </h1>
             <p className="mt-4 text-sm font-semibold text-slate-400">
               {post.date.toLocaleDateString("en-AU")}
             </p>
