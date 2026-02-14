@@ -2,95 +2,151 @@
 title: 'Part 1: Getting started online'
 date: '2025-11-30'
 ---
-If you're a new business owner, it's likely you have a multitude of tasks on your plate. Establishing an online presence can often feel like an overwhelming challenge, filled with technical jargon and a seemingly endless array of options. However, it doesn't have to be a source of stress.
+If you're a new business owner, chances are you're juggling a lot right now. Setting up your online presence shouldn't add to that stress. The good news is that you don't need to figure it all out at once. You just need a solid plan and the right tools in place.
 
-My name is Mathias, and over the past nine years, I've had the privilege of assisting over 80 businesses, much like yours, in establishing their online foundations. Operating from our digital marketing agency in Canberra, I've observed the full spectrum of experiences: from those who are digitally adept to those who feel completely overwhelmed. My aim here is to simplify this process for you.
+My name is Mathias. Over the past nine years, I've helped over 80 businesses get their online foundations right. Working at Threesides, a digital marketing agency in Canberra, I've seen every setup imaginable. Some are meticulously organised. Others are a bit of a mess. Most of the time, it's not the business owner's fault. These platforms simply don't make it easy to know where to start.
+
+That's what this article is for.
 
 ---
 ## Background
-Growing up in a family business gave me a change to 'get on the tools' early - helping to set up the Facebook page for Country Gusthouse Schonegg as I was still in primary school. 
-Once I finished high-school, I joined the team at Threesides, a digital marketing agency in Canberra. I was involved in onboarding new clients and saw the wide range of how accounts were set up: some meticulously organised, others were quitea mess. It wasn't the business owner's fault - these platforms and tools don't make it easy.
+
+I grew up in a family business, learning early that getting the fundamentals right matters. When I finished high school, I joined the team at Threesides. From day one, I was involved in onboarding new clients. I saw firsthand how confusing it is to set up accounts across multiple platforms. The good news is that most businesses follow a similar path, and once you understand the order of things, it becomes much more straightforward.
+
+Over the years, I've also learned what works and what doesn't. I've seen businesses thrive because they took time to set things up properly at the start. I've also seen others struggle because they skipped steps or chose the wrong platform for their needs.
 
 ## Objective
-My goal with this article series is clear:
-1.  **Provide clear, easy-to-follow instructions** to help you set up your online tools without making it too complex. We'll focus on practical steps, without the technical jargon.
-2.  **Reduce your risk and complexity** by showing you reliable options and keeping you on track. This approach will prioritise simplicity and security.
-3.  **Outline key areas for future growth and development.** We will establish a solid foundation, and I'll offer insights into how you can build on these when your business is ready.
+
+This article series is designed to help you avoid common pitfalls and get your online presence sorted. Here's what I'm aiming for:
+
+1. **Provide clear, practical instructions** that don't require a technical background. No jargon. Just straightforward steps.
+2. **Help you reduce risk and complexity** by recommending reliable options and keeping you focused on what matters. Security and simplicity come first.
+3. **Set you up for growth** with a solid foundation you can build on as your business scales.
 
 ## Step 1: Getting started
-Let's start with the absolute essentials to get your business online. These are the foundational elements of your digital toolkit.
+
+Let's walk through the essentials. Think of these as the building blocks of your digital presence.
 
 ### Dedicated Business Email Account
-Before considering domains or websites, sign up for a Gmail account that you'll just use for your business. This will be your 'backup admin' account in future. Choose a name that's relevant to your business.
 
-*Only use this account to set up the accounts in the following steps. You'll switch to using a business email address for everything else soon.*
+Before you do anything else, create a Gmail account you'll use just for your business administration. This will be your "master key" account for setting up everything else. Choose something simple and relevant to your business name.
+
+Important: Use this account only for setup. Once you've got your domain sorted, you'll switch to a professional business email address for everything else.
 
 ### Domain
-This serves as your business's unique address on the internet.
-1.  **Domain Name**
-    Your domain name is the address people type into their browser to find you (e.g., yourbusiness.com.au). Select a name that is memorable, easy to spell, and directly relevant to your brand. For Australian businesses, securing a `.au` or `.com.au` domain is highly recommended, as it can help with local search engine optimisation demonstrates you're an Aussie business.
-2.  **DNS (Domain Name System)**
-    The DNS acts as the internet's map. When someone enters your domain name, DNS translates it into an IP address, directing them to where your website and email services are hosted. Typically, your domain registrar (where you purchase your domain) manages these settings, but you can choose to use an external provider (like Cloudflare) for this too.
+
+Your domain is your address on the internet. It's the first thing customers will type to find you.
+
+**Domain Name**
+
+Pick something memorable, easy to spell, and relevant to what you do. For Australian businesses, a `.com.au` or `.au` domain is worth investing in. It helps with local search rankings and builds trust with customers. If your first choice is taken, don't overthink it. Pick something close and move on.
+
+**DNS (Domain Name System)**
+
+Think of DNS as the internet's address book. When someone types your domain, DNS tells their browser where to find your website and email. Your domain registrar handles this automatically, but you can switch to an external provider like Cloudflare if you want more control. For most new businesses, the default setup is fine.
 
 ### Website
-Your website functions as your online storefront, informational brochure, and central hub, all combined. This is a place where you control the content and what is said about your business. 
 
-1.  **Web Hosting/Platform**
-    This is the location where your website resides on the internet, storing all your files, images, and content.
-    1.  **COTS (Commercial Off-The-Shelf): Squarespace, Wix, Shopify**
-    These platforms offer excellent ease of use. They are all-in-one solutions that include hosting, website builders, and often in tegrated e-commerce functionalities.
-        * **Pros:** Highly user-friendly, intuitive drag-and-drop interfaces, professional templates, and built-in security and maintenance. Ideal for launching an online presence quickly without requiring extensive technical knowledge.
-        *   **Cons:** May offer less flexibility for highly customised features, and you operate within their specific ecosystem.
-        > **What to choose?**
-        >
-        > I recommend **Squarespace** as a reliable, fully featured off-the-shelf platform to build your website. You'll get the flexibility of a drag-and-drop editor, but a more refined and consistent experience compared to Wix.
-        
-    2.  **DIY: WordPress (self-hosted)**
-    WordPress is an incredibly powerful and adaptable platform, supporting a significant portion of the internet. However, it requires a more hands-on approach.
-        *   **Pros:** Offers ultimate flexibility, access to thousands of plugins and themes, and scalability for complex requirements. You maintain full control.
-        *   **Cons:** Requires separate hosting, more technical proficiency for setup and ongoing maintenance, and you are responsible for security updates and backups.
-        > **What to choose?**
-        >
-        > If you like to tinker, and expect your website to have functionality than just text content,  **WordPress** as a great platform to get started on. Sign up for managed WordPress hosting through a platform like **WPMUDEV**. Start with a basic plan, and only upgrade when required.
+Your website is where you control your message. It's your storefront, your brochure, and your hub all in one. You own it. You control it.
 
-2.  **Business-Grade Email**
-    Once your domain is secured, establishing email addresses that align with it (e.g., info@yourbusiness.com.au) creates a cohesive and professional brand identity.
-    1.  **Google Workspace vs Microsoft 365**
-        These are the two dominant providers in this space. Both offer professional email services, cloud storage, video conferencing, and a comprehensive suite of productivity applications (Google Docs/Sheets/Slides, Microsoft Word/Excel/PowerPoint).
-        *   **Google Workspace:** Known for its collaboration features, user-friendliness, and seamless integration with other Google services.
-        *   **Microsoft 365:** Often the *more professional* option - Microsoft365 provides additional user management, device management and security options compared to Google Workspace. 
-        *   **My Recommendation:** Both options are robust and reliable. Choose the platform that you find most intuitive and that integrates best with any existing tools you currently use. The critical step is to utilise a professional, domain-based email service.
-*   
+**Web Hosting and Platform**
 
-1.  **Social Media (Meta Platforms)**
-    For many businesses, social media platforms are key gathering points for their target audience. Meta (the parent company of Facebook) offers a powerful suite of tools.
-    1.  **Meta Business Suite (formerly Meta Business Portfolio)**
-        This is your centralised dashboard for managing your Facebook Pages, Instagram accounts, and advertising efforts. It's essential for maintaining organisation across your social media presence.
-    2.  **Facebook Page**
-        Continues to be a vital platform for reaching a broad audience, sharing business updates, and engaging with your community. It's often the initial point of contact for individuals seeking information about a business online.
-    3.  **Instagram Account**
-        Indispensable for businesses with a strong visual component (such as retail, hospitality, or creative industries). It's ideal for showcasing products or services through compelling images and short videos.
-    4.  **Ads Manager**
-        This is the platform where you will create, manage, and monitor all your paid advertising campaigns across Facebook and Instagram. It's a powerful tool, and we will cover its fundamental aspects in later discussions.
-    5.  **Meta Pixel**
-        A small snippet of code that you embed on your website to track visitor activity. This is invaluable for understanding user interactions with your site, optimising your advertisements, and implementing retargeting campaigns (displaying ads to users who have previously visited your website).
-    6.  **Catalogue**
-        If your business sells products, a Meta Catalogue allows you to upload your product inventory. This is crucial for running dynamic product ads (presenting specific products to interested users) and for establishing a shop section on your Facebook and Instagram profiles.
+You need somewhere for your website to live on the internet.
 
-2.  **Analytics**
-    The adage "you can't improve what you don't measure" holds true. Analytics tools provide critical insights into your online performance.
-    1.  **Google Analytics (GA4)**
-        Monitors website traffic, user behaviour, visitor origins, and actions taken on your site. This tool is indispensable for comprehending your website's effectiveness.
-    2.  **Meta Pixel**
-        (As previously mentioned) provides essential data for your social media advertising campaigns, helping you ascertain user actions post-ad click.
-    3.  **Microsoft Clarity**
-        Offers exceptional visual insights, including heatmaps (illustrating where users click and scroll on your pages) and session recordings (allowing you to watch anonymised replays of user journeys). It's a remarkably useful free tool for understanding the *reasons* behind user behaviour on your website.
+**Option 1: All-in-One Platforms (Squarespace, Wix, Shopify)**
 
-3.  **Advertising**
-    Once your foundational elements are in place, advertising becomes a powerful means to broaden your reach and drive business growth.
-    1.  **Google Ads**
-        Enables you to display advertisements within Google search results, on YouTube, and across an extensive network of websites. This is highly effective for capturing demand when individuals are actively searching for products or services you offer.
-    2.  **Meta Ads (Facebook/Instagram Ads)**
-        Excellent for building brand awareness, generating leads, and driving sales by targeting specific demographics and interests across Meta's platforms.
+These are Commercial Off-The-Shelf solutions. Everything is bundled together: hosting, builder, security, updates. You don't have to think about the technical side.
 
-These are the fundamental components for establishing a robust online presence. While it may appear extensive, addressing each step systematically will position your business for success. In subsequent parts of this series, we will delve deeper into each of these points, offering more practical advice and strategies to optimise their performance.
+Pros: Easy to use, drag-and-drop editors, professional templates, and built-in security. You can launch quickly without technical knowledge.
+
+Cons: Less flexibility if you need custom features. You're locked into their ecosystem.
+
+**My recommendation: Start with Squarespace.** It strikes a good balance between ease of use and professional quality. It's reliable and has a clean interface that doesn't feel clunky.
+
+**Option 2: WordPress (Self-Hosted)**
+
+WordPress powers a huge chunk of the internet. It's incredibly flexible. But it requires more hands-on work.
+
+Pros: Ultimate control. Thousands of plugins and themes. Scales well as you grow.
+
+Cons: Needs separate hosting. More technical setup. You manage updates and security yourself.
+
+**My recommendation: Only choose WordPress if you're comfortable tinkering, or if you plan significant custom functionality from day one.** If you do go this route, use managed WordPress hosting like WP Engine or WPMUDEV. It takes some of the technical burden off your shoulders.
+
+### Business-Grade Email
+
+Once your domain is set up, you'll want email addresses that match it (info@yourbusiness.com.au). This makes you look professional and keeps things cohesive.
+
+**Google Workspace vs Microsoft 365**
+
+These are the two main players. Both offer professional email, cloud storage, and productivity tools.
+
+Google Workspace is great for collaboration and integrates seamlessly with Google's other tools. It's straightforward and feels familiar if you've used Gmail.
+
+Microsoft 365 is the more "enterprise" option. If you're already using Word, Excel, and PowerPoint for your business, it integrates well. It also has stronger user and device management features if you're planning to grow a team.
+
+**My recommendation: Choose whichever feels more natural to you.** The key is using a professional, domain-based email address instead of a generic Gmail or Outlook account. That one change alone makes you look established.
+
+### Social Media (Meta Platforms)
+
+For most businesses, your customers are on social media. Meta (Facebook's parent company) gives you the tools to reach them.
+
+**Meta Business Suite**
+
+This is your control centre for Facebook Pages, Instagram accounts, and advertising. It keeps everything organised in one place.
+
+**Facebook Page**
+
+Still one of the most important platforms. It's where many customers look for proof that you exist, and that others know about you. It's where you share updates, answer questions, and build community.
+
+**Instagram Account**
+
+The 'new Facebook'. Even if your business isn't 'camera friendly', Instagram is great for showcasing what you do through images and video.
+
+**Ads Manager**
+
+Where you'll create and manage paid campaigns across Facebook and Instagram. It's a powerful tool, and we'll cover the basics later.
+
+**Meta Pixel**
+
+A small piece of code you add to your website that tracks what people do when they visit. This data helps you understand your audience and run better ads. It's especially useful for retargeting (showing ads to people who've already visited your site).
+
+**Catalogue**
+
+If you sell products, upload your inventory here. This lets you run dynamic product ads and create a shop section on your Facebook and Instagram profiles.
+
+### Analytics
+
+You can't improve what you don't measure. These tools show you what's working.
+
+**Google Analytics (GA4)**
+
+Tracks how many people visit your website, where they come from, and what they do when they're there. Essential for understanding how your website performs.
+
+**Meta Pixel**
+
+(Mentioned above) Tracks what people do after clicking your ads. Invaluable for improving your advertising.
+
+**Microsoft Clarity**
+
+A free tool from Microsoft that shows you visual data. Heatmaps show where people click. Session recordings let you watch (anonymously) how users move through your site. It answers the "why" behind user behaviour.
+
+### Advertising
+
+Once the foundation is in place, advertising helps you reach more people and drive business.
+
+**Google Ads**
+
+Show up in Google search results when people are actively looking for what you offer. Great for capturing demand.
+
+**Meta Ads (Facebook/Instagram)**
+
+Build awareness and reach people based on their interests and demographics. Strong for lead generation and sales.
+
+---
+
+That's the core of what you need. Yes, it's a lot. But each step builds on the last. Tackle them one by one, and you'll have a solid online presence that positions your business for success.
+
+In the next parts of this series, we'll dive deeper into each of these areas. I'll walk you through the actual setup steps, share practical tips I've learned from working with over 80 businesses, and help you avoid the common mistakes I see most often.
+
+You've got this.
